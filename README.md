@@ -1,7 +1,7 @@
 # Brex_AI_powered_receipt_matching-CRITICAL-HIT-
 Team name: Critical Hit
 # 🧾 AI Receipt Matching System
-
+#### Screenshots: https://drive.google.com/drive/folders/1nBOW8aAjFHeKio1vILWeWAzvI2aVfeYU?usp=drive_link
 An advanced machine learning-powered system for automatically matching receipts to bank transactions with confidence scoring and intelligent decision making.
 
 ## ✨ Features
