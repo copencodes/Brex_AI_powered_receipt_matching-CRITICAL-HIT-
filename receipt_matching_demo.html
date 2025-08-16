@@ -511,9 +511,12 @@
         }
 
         function displayResult(receipt, transaction, result, features) {
+            const config = getConfig(); // Get current config for color calculation
             const decisionClass = result.decision.toLowerCase().replace('-', '');
-            const confidenceColor = result.confidence >= 0.9 ? '#28a745' : 
-                                   result.confidence >= 0.7 ? '#ffc107' : '#dc3545';
+            
+            // Fixed color logic - use dynamic thresholds from config
+            const confidenceColor = result.confidence >= config.autoThreshold ? '#28a745' : 
+                                   result.confidence >= config.reviewThreshold ? '#ffc107' : '#dc3545';
             
             return `
                 <div class="match-result ${decisionClass}">
